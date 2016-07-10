@@ -21,7 +21,7 @@ def search_restaurant(locality):
 def venue_details(venue_id):
 	api_key = "bb5f92fb7f236891948704449f13f083ce2c1978"
 	api_endpoint = "http://api.locu.com/v1_0/venue/"
-	#locality = 'New%20York'
+	#locality = 'Delhi'
 	#category = "restaurant"
 	api_url = api_endpoint  + venue_id + "/" +"?api_key=" + api_key
 
