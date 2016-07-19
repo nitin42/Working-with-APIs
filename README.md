@@ -28,12 +28,12 @@ To post or get the data as response from an API, always remember about the endpo
 - **The Response**
 When we get the response from the server, it will be in the form of three digit code status indicating about the situation.
 Below are some status code:
-> 
-- 1xx - Server is working on something!
-- 2xx - Success
-- 3xx - Incase the url requested is changed, the server responds after getting the response from the new or altered url
-- 4xx - Mistake made by client
-- 5xx - Mistake made by server or some obfuscated request to the server.
+ 
+>- 1xx - Server is working on something!
+>- 2xx - Success
+>- 3xx - Incase the url requested is changed, the server responds after getting the response from the new or altered url
+>- 4xx - Mistake made by client
+>- 5xx - Mistake made by server or some obfuscated request to the server.
 
 - **Parsing JSON**
 To parse the response which is either received in JSON or XML format we import json and xml.dom. To work with JSON,
