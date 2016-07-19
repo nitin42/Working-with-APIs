@@ -22,7 +22,7 @@ Popular APIs
 ## Using APIs with Python
 
 - **Making a request**
-To make a HTTp request, we use ```urlopen()``` method for GET request and then read the response as ```response_object.read()```. Remember the four verbs when dealing with HTTP request i.e GET, POST, PUT and DELETE.
+To make a HTTP request, we use ```urlopen()``` method for GET request and then read the response as ```response_object.read()```. Remember the four verbs when dealing with HTTP request i.e GET, POST, PUT and DELETE.
 To post or get the data as response from an API, always remember about the endpoints of the API.
 
 - **The Response**
