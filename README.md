@@ -40,7 +40,8 @@ Below are some status code:
 - **Parsing JSON**
 To parse the response which is either received in JSON or XML format we import json and xml.dom. To work with JSON,
 use ```load()``` to load the JSON response. To work with XML, consider this example,
-> 
+
+```
 from xml.dom import minidom
 
 f = open('example.txt', 'r')
@@ -50,6 +51,6 @@ f.close()
 names = pets.getElementsByTagName('name')
 for name in names:
 	print name.firstChild.nodeValue
-
+```
 
 
