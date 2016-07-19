@@ -21,18 +21,33 @@ Popular APIs
 
 ## Using APIs with Python
 
-- Making a request
+- **Making a request**
 To make a HTTp request, we use ```urlopen()``` method for GET request and then read the response as ```response_object.read()```. Remember the four verbs when dealing with HTTP request i.e GET, POST, PUT and DELETE.
 To post or get the data as response from an API, always remember about the endpoints of the API.
 
-- The Response
+- **The Response**
 When we get the response from the server, it will be in the form of three digit code status indicating about the situation.
 Below are some status code:
 > 
-1xx - Server is working on something!
-2xx - Success
-3xx - Incase the url requested is changed, the server responds after getting the response from the new or altered url
-4xx - Mistake made by client
-5xx - Mistake made by server or some obfuscated request to the server.
+- 1xx - Server is working on something!
+- 2xx - Success
+- 3xx - Incase the url requested is changed, the server responds after getting the response from the new or altered url
+- 4xx - Mistake made by client
+- 5xx - Mistake made by server or some obfuscated request to the server.
+
+- **Parsing JSON**
+To parse the response which is either received in JSON or XML format we import json and xml.dom. To work with JSON,
+use ```load()``` to load the JSON response. To work with XML, consider this example,
+> 
+from xml.dom import minidom
+
+f = open('example.txt', 'r')
+pets = minidom.parseString(f.read())
+f.close()
+
+names = pets.getElementsByTagName('name')
+for name in names:
+	print name.firstChild.nodeValue
+
 
 
