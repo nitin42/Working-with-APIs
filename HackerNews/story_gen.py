@@ -7,11 +7,15 @@ from random import randint
 import requests
 import json
 
+# Method 1
+
 api_endpoint = 'https://hacker-news.firebaseio.com/v0/item/' + str(randint(1,100000)) + '.json?print=pretty' 
 obj = requests.get(api_endpoint)
 res = obj.content
 data = json.loads(res)
 print data
+
+# Method 2
 
 # def hacker_news(news_id):
 	# api_endpoint = 'https://hacker-news.firebaseio.com/v0/item/' + str(news_id) + '.json?print=pretty' 
